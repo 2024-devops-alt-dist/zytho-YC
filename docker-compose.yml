@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:15-alpine 
+    container_name: postgres-container
+    restart: always
+    environment:
+      POSTGRES_USER: leigh
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: zythologue
+    ports:
+      - "5432:5432"             
+
+volumes:
+  postgres_data:
