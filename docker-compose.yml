@@ -4,7 +4,7 @@ services:
     container_name: new-postgres-container
     restart: always
     environment:
-      POSTGRES_USER: leigh
+      POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: zythologue
     ports:
