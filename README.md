@@ -1,5 +1,5 @@
 
-# Zythologue - La Base de données des amateurs de bières
+# Zythologue - La Base de données des amateurs de bières 🍺
 
 Ce projet configure une base de données PostgrerSQL de "zythologue" (amateur et connaisseur de bière) avec Docker et un Docker Compose. La base de données permet de référencer les brasseries, leurs bières, et permet aux utilisateurs de donner leurs avis avec des notes pour les bières qu'ils préfèrent (ou non).
 
@@ -8,7 +8,7 @@ Ce projet configure une base de données PostgrerSQL de "zythologue" (amateur et
 
 Pour installer ce projet en local vous aurez besoin de :
 
-`DOCKER`
+`DOCKER` 🐳
 
 
 ## Lancer localement
