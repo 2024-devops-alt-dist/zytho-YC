@@ -1,14 +1,17 @@
 services:
   postgres:
     image: postgres:15-alpine 
-    container_name: postgres-container
+    container_name: new-postgres-container
     restart: always
     environment:
       POSTGRES_USER: leigh
       POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: zythologue
     ports:
-      - "5432:5432"             
+      - "5432:5432"
+    volumes:
+      - postgresdata:/var/lib/postgresql/data # Volume pour stocker les données. nom_du_volume:emplacement_dans_le_container
+      - ./db-scripts:/docker-entrypoint-initdb.d/ # Chemin des scripts SQL pour l'initialisation de la base de données             
 
 volumes:
-  postgres_data:
+  postgresdata:
